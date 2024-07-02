@@ -51,17 +51,17 @@ button:hover {
 
 /* Background images for different weather conditions */
 .sunny {
-  background: url("sunny.jpg") no-repeat center center fixed;
+  background: url("img/sunny.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
 .cloudy {
-  background: url("cloudy.jpg") no-repeat center center fixed;
+  background: url("img/cloudy.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
 .rainy {
-  background: url("rainy.jpg") no-repeat center center fixed;
+  background: url("img/rainy.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
