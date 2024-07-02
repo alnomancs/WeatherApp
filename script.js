@@ -7,6 +7,18 @@ document
       getWeather();
     }
   });
+
+// Fetch city names from the JSON file and populate the datalist
+fetch("cities.json")
+  .then((response) => response.json())
+  .then((cities) => {
+    const cityList = document.getElementById("cityList");
+    cities.forEach((city) => {
+      const option = document.createElement("option");
+      option.value = city;
+      cityList.appendChild(option);
+    });
+  });
 function getWeather() {
   const city = document.getElementById("cityInput").value;
   const apiKey = "10cabe48cb40a5d3a48a30b545047a24"; // Replace with your OpenWeatherMap API key
